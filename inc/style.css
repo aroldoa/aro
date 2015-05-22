@@ -31,7 +31,12 @@ main{}
 .hover{display: none; background-color:#3a3848;}
 .portfolio-context{background-image: url(img/portfolio-back.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; height: 500px; margin: 0px; padding: 100px 0px;}
 .portfolio-tesoro{background-image: url(img/tesoro-back.png); background-position: top left; background-repeat: no-repeat; height: 800px;}
+.portfolio-context h1{color: #fff; font-size: 42px; font-weight: lighter; margin-bottom: 30px;}
+ul#project-details{display: inline; margin: 0px; padding: 0px; color: #74788b; font-weight: lighter;}
+ul#project-details li{display: inline; margin: 0px 12px; padding: 0px 10px;}
+.portfolio-context p{color: #fff; font-weight: lighter; font-size: 16px; margin-top: 50px; line-height: 32px; margin-bottom: 50px;}
 
+.downarrow{background-image: url(img/downarrow.png); background-repeat: no-repeat; background-position: center; width: 33px; height: 17px; position: relative; left: 49%;}
 /* Menu Styles
 ----------------------------------------------------------------------------------- */
 nav.main{display: none;}
