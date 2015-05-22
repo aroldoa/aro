@@ -6,45 +6,32 @@ body{margin: 0px; padding: 0px;width: 100%;height: 100%; }
 .loaded{opacity: 1;}
 section{}
 .centered{text-align: center;}
-main{padding: 100px 0px;}
+main{}
 .footer{background-image: url(img/footer-background.jpg); background-position: center; background-size: cover; height: 550px;}
-.slideout-menu {
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-  width: 256px;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  display: none;
-  background: red;
-}
-
-.slideout-panel {
-  position:relative;
-  z-index: 1;
-}
-
-.slideout-open,
-.slideout-open body,
-.slideout-open .slideout-panel {
-  overflow: hidden;
-}
-
-.slideout-open .slideout-menu {
-  display: block;
-}
+.slideout-menu {position: fixed;right: 0;top: 0;bottom: 0;right: 0;z-index: 0;width: 256px;overflow-y: auto;-webkit-overflow-scrolling: touch;display: none;background: red;}
+.slideout-panel {position:relative;z-index: 1;}
+.slideout-open,.slideout-open body,.slideout-open .slideout-panel {overflow: hidden;}
+.slideout-open .slideout-menu {display: block;}
 
 /* Container Styles
 ----------------------------------------------------------------------------------- */
-.showcase{position: relative;background-image: url(img/banner1.jpg); background-position: center; background-size: cover; height: 760px;}
+.showcase{position: relative; background-image: url(img/banner1.jpg); background-position: center; background-size: cover; height: 760px;}
+.showcase.tesoro{position: relative; background-image: url(img/tesoro-corporation-showcase.jpg); background-position: center; background-size: cover; height: 760px; margin: 0px; padding: 0px;} 
 .showcase h1{line-height: 58px;margin: 0px; padding: 0px; font-size: 48px; color: #fff; font-weight: lighter; text-align: center;}
-.grid{padding: 80px 0px;}
+.grid{padding: 40px 0px 80px 0px;}
 .featured{margin-bottom: 35px;}
 .followme{background-color: #f7f7f7; height: 190px; margin: 0px; padding: 30px 0px;}
-.introtext{position: absolute; top:50%; left: 27%; }
+.introtext{position: relative; top:50%;}
+.intro{position: relative;}
+.grid .cta{margin-top: 120px;}
+.grid .cta a{padding: 22px 110px; border: 1px solid #d43f5b; text-transform: uppercase; color: #d43f5b; font-weight: bold;}
+.grid .cta a:hover{text-decoration: none; background-color: #d43f5b; color: #fff;}
+.contactme{height: 480px;}
+.copyright{border-top:1px solid #d43f5b; height: 60px;}
+.hover{display: none; background-color:#3a3848;}
+.portfolio-context{background-image: url(img/portfolio-back.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; height: 500px; margin: 0px; padding: 100px 0px;}
+.portfolio-tesoro{background-image: url(img/tesoro-back.png); background-position: top left; background-repeat: no-repeat; height: 800px;}
+
 /* Menu Styles
 ----------------------------------------------------------------------------------- */
 nav.main{display: none;}
@@ -53,3 +40,8 @@ ul#topnav li{display: block; padding: 20px 0px;}
 
 /* Fonts Styles
 ----------------------------------------------------------------------------------- */
+.intro h2{font-size: 32px; font-weight: lighter;color: #313544;margin-top: 50px;}
+.intro h3{font-size: 28px; font-weight: lighter;color: #d43f5b; background-image: url(img/redline.png); background-repeat: no-repeat; background-position: center; padding-bottom: 80px;}
+.footer h4{margin-top: 180px; color:#d43f5b;font-weight: lighter; font-size: 32px; margin-bottom: 20px;}
+.footer p{color: #fff; font-size: 15px;font-weight: lighter;}
+.copyright p{font-size: 12px; padding: 25px 0px;font-weight: lighter;}

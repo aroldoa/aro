@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function(){
     jQuery('.load').addClass('loaded');
     jQuery(".menu").click(function(){
