@@ -6,7 +6,7 @@ body{margin: 0px; padding: 0px;width: 100%;height: 100%; }
 .loaded{opacity: 1;}
 section{}
 .centered{text-align: center;}
-main{padding: 100px 0px;}
+main{}
 .footer{background-image: url(img/footer-background.jpg); background-position: center; background-size: cover; height: 550px;}
 .slideout-menu {
   position: fixed;
@@ -39,12 +39,26 @@ main{padding: 100px 0px;}
 
 /* Container Styles
 ----------------------------------------------------------------------------------- */
-.showcase{position: relative;background-image: url(img/banner1.jpg); background-position: center; background-size: cover; height: 760px;}
+.showcase{position: relative;background-image: url(img/banner1.jpg); background-position: center; background-size: cover; height: 820px;}
 .showcase h1{line-height: 58px;margin: 0px; padding: 0px; font-size: 48px; color: #fff; font-weight: lighter; text-align: center;}
+.work{position: relative;height: 820px; background-color: #3b3c4c; background-image: url(img/work-background.jpg); background-position: center; background-size: cover;}
+.work h1{line-height: 68px;margin: 0px; padding: 0px; font-size: 48px; color: #fff; font-weight: lighter; text-align: center;}
+.work.tesoro{position: relative;height: 820px; background-color: #3b3c4c; background-image: url(img/tesoro-corporation-background.jpg); background-position: center; background-size: cover;}
 .grid{padding: 80px 0px;}
 .featured{margin-bottom: 35px;}
 .followme{background-color: #f7f7f7; height: 190px; margin: 0px; padding: 30px 0px;}
-.introtext{position: absolute; top:50%; left: 27%; }
+.introtext{position: relative; top:45%; }
+.item{height: 329px; }
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.likewhatyousee{clear: both !important;padding: 30px 0px; background-color: #e22b17;}
 /* Menu Styles
 ----------------------------------------------------------------------------------- */
 nav.main{display: none;}
