@@ -1,13 +1,17 @@
 /* Global Styles
 ----------------------------------------------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
 html{margin: 0px; padding: 0px; height: 100%;}
-body{margin: 0px; padding: 0px;width: 100%;height: 100%; }
+body{width: 100%; margin: 0px; padding: 0px; height: 100%;     margin: 0 auto;
+    padding: 0 auto; }
 .load{opacity: 0;-webkit-transition: opacity .7s;-moz-transition: opacity .7s;-o-transition: opacity .7s;-ms-transition: opacity .7s;transition: opacity .7s;}
 .loaded{opacity: 1;}
-section{}
-.centered{text-align: center;}
-main{}
-.footer{background-image: url(img/footer-background.jpg); background-position: center; background-size: cover; height: 550px;}
+.centered{text-align: center !important;   display: block; margin-left: auto;margin-right: auto;}
+main{clear:both; height: 100%;}
+section{width: 100%;}
+.footer{background-image: url(img/footer-background.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; padding: 40px 0px 0px 0px;}
 .slideout-menu {position: fixed;right: 0;top: 0;bottom: 0;right: 0;z-index: 0;width: 256px;overflow-y: auto;-webkit-overflow-scrolling: touch;display: none;background: red;}
 .slideout-panel {position:relative;z-index: 1;}
 .slideout-open,.slideout-open body,.slideout-open .slideout-panel {overflow: hidden;}
@@ -15,28 +19,39 @@ main{}
 
 /* Container Styles
 ----------------------------------------------------------------------------------- */
-.showcase{position: relative; background-image: url(img/banner1.jpg); background-position: center; background-size: cover; height: 760px;}
-.showcase.tesoro{position: relative; background-image: url(img/tesoro-corporation-showcase.jpg); background-position: center; background-size: cover; height: 760px; margin: 0px; padding: 0px;} 
-.showcase h1{line-height: 58px;margin: 0px; padding: 0px; font-size: 48px; color: #fff; font-weight: lighter; text-align: center;}
-.grid{padding: 40px 0px 80px 0px;}
+.showcase{position: relative; background-image: url(img/banner1.jpg); background-position: center; background-size: cover; height: 960px;}
+.showcase.tesoro{position: relative; background-image: url(img/tesoro-corporation-showcase.jpg); background-position: center; background-size: cover; height: 100vh; margin: 0px; padding: 0px;  -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;} 
+.showcase.primo{position: relative; background-image: url(img/primo-motif-showcase.jpg); background-position: center; background-size: cover; height: 100vh; margin: 0px; padding: 0px;  -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;} 
+.showcase.alpha{position: relative; background-image: url(img/alpha-showcase.jpg); background-position: center; background-size: cover; height: 100vh; margin: 0px; padding: 0px;  -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+.showcase.marcal{position: relative; background-image: url(img/marcal-showcase.jpg); background-position: center; background-size: cover; height: 100vh; margin: 0px; padding: 0px;  -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;} 
+.showcase.modamia{position: relative; background-image: url(img/mm-showcase.jpg); background-position: center; background-size: cover; height: 100vh; margin: 0px; padding: 0px;  -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;} 
+.showcase h1{line-height: 58px;margin: 0px; padding: 0px; font-size: 48px; color: #fff; font-weight: 100; text-align: center; font-family: 'Lato', sans-serif;}
+.grid{padding: 40px 0px 120px 0px;}
 .featured{margin-bottom: 35px;}
 .followme{background-color: #f7f7f7; height: 190px; margin: 0px; padding: 30px 0px;}
-.introtext{position: relative; top:50%;}
+.introtext{position: relative; top:60%; opacity: 0;}
 .intro{position: relative;}
 .grid .cta{margin-top: 120px;}
 .grid .cta a{padding: 22px 110px; border: 1px solid #d43f5b; text-transform: uppercase; color: #d43f5b; font-weight: bold;}
 .grid .cta a:hover{text-decoration: none; background-color: #d43f5b; color: #fff;}
-.contactme{height: 480px;}
-.copyright{border-top:1px solid #d43f5b; height: 60px;}
+.contactme{ margin-bottom: 200px;}
+.copyright{border-top:1px solid #d43f5b;}
 .hover{display: none; background-color:#3a3848;}
-.portfolio-context{background-image: url(img/portfolio-back.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; height: 500px; margin: 0px; padding: 100px 0px;}
-.portfolio-tesoro{background-image: url(img/tesoro-back.png); background-position: top left; background-repeat: no-repeat; height: 800px;}
-.portfolio-context h1{color: #fff; font-size: 42px; font-weight: lighter; margin-bottom: 30px;}
-ul#project-details{display: inline; margin: 0px; padding: 0px; color: #74788b; font-weight: lighter;}
+.portfolio-context{background-image: url(img/portfolio-back.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; height: 470px; margin: 0px; padding: 80px 0px;}
+.portfolio-tesoro{ background-image: url(img/tesoro-back.png); background-position: top left; background-repeat: no-repeat; padding: 80px 0px;}
+.portfolio-context h1{color: #fff; font-size: 42px; font-weight: 100; font-family: 'Lato', sans-serif; margin-bottom: 30px; position: relative; top:200px; opacity: 0;}
+ul#project-details{position: relative; opacity: 0; display: inline; margin: 0px; padding: 0px; color: #74788b; font-weight: lighter;}
 ul#project-details li{display: inline; margin: 0px 12px; padding: 0px 10px;}
-.portfolio-context p{color: #fff; font-weight: lighter; font-size: 16px; margin-top: 50px; line-height: 32px; margin-bottom: 50px;}
-
+.portfolio-context p{opacity: 0; color: #fff; font-weight: 300; font-size: 16px; margin-top: 50px; line-height: 32px; margin-bottom: 50px; font-family: 'Open Sans', sans-serif;}
 .downarrow{background-image: url(img/downarrow.png); background-repeat: no-repeat; background-position: center; width: 33px; height: 17px; position: relative; left: 49%;}
+.related{clear: both !important; padding: 60px 0px;}
+.related h4{font-family: sans-serif; font-size: 21px; font-weight: 300; color: #d43f5b; margin-bottom: 50px; font-family: 'Lato', sans-serif;}
+.container-full img.up{position: relative; top:200px; opacity: 0;}
+.container-full img.up2{position: relative; top:200px; opacity: 0;}
+.container-full img.fade{position: relative; opacity: 0;}
+.container-full img.left{position: relative; right: 200px; opacity: 0;}
+.container-full img.right{position: relative; left: 200px; opacity: 0;}
+
 /* Menu Styles
 ----------------------------------------------------------------------------------- */
 nav.main{display: none;}
@@ -45,8 +60,16 @@ ul#topnav li{display: block; padding: 20px 0px;}
 
 /* Fonts Styles
 ----------------------------------------------------------------------------------- */
-.intro h2{font-size: 32px; font-weight: lighter;color: #313544;margin-top: 50px;}
+.intro h2{font-size: 32px; font-weight: 300;color: #313544;margin-top: 120px; font-family: 'Lato', sans-serif;}
 .intro h3{font-size: 28px; font-weight: lighter;color: #d43f5b; background-image: url(img/redline.png); background-repeat: no-repeat; background-position: center; padding-bottom: 80px;}
-.footer h4{margin-top: 180px; color:#d43f5b;font-weight: lighter; font-size: 32px; margin-bottom: 20px;}
+.footer h4{margin-top: 80px; color:#d43f5b;font-weight: 100; font-size: 32px; margin-bottom: 20px; font-family: 'Lato', sans-serif;}
 .footer p{color: #fff; font-size: 15px;font-weight: lighter;}
 .copyright p{font-size: 12px; padding: 25px 0px;font-weight: lighter;}
+
+/* Single Portfolio Styles
+----------------------------------------------------------------------------------- */
+
+.top{width: 100%;display: block;}
+.gray{background-color: #e7e9e8;}
+.blue{background-color: #28304e;}
+.row{overflow: hidden; margin: 0px !important; padding: 0px !important;}
