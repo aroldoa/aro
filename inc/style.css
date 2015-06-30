@@ -9,7 +9,7 @@ body{width: 100%; margin: 0px; padding: 0px; height: 100%;     margin: 0 auto;
 .load{opacity: 0;-webkit-transition: opacity .7s;-moz-transition: opacity .7s;-o-transition: opacity .7s;-ms-transition: opacity .7s;transition: opacity .7s;}
 .loaded{opacity: 1;}
 .centered{text-align: center !important;   display: block; margin-left: auto;margin-right: auto;}
-main{clear:both; height: 100%;}
+main{clear:both; height: 100%; opacity: 0;}
 section{width: 100%;}
 .footer{background-image: url(img/footer-background.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; padding: 40px 0px 0px 0px;}
 .slideout-menu {position: fixed;right: 0;top: 0;bottom: 0;right: 0;z-index: 0;width: 256px;overflow-y: auto;-webkit-overflow-scrolling: touch;display: none;background: red;}
@@ -19,10 +19,11 @@ section{width: 100%;}
 
 /* Container Styles
 ----------------------------------------------------------------------------------- */
-.showcase{position: relative; background-image: url(img/banner1.jpg); background-position: center; background-size: cover; height: 960px;}
-.showcase.tesoro{position: relative; background-image: url(img/tesoro-corporation-showcase.jpg); background-position: center; background-size: cover; height: 100vh; margin: 0px; padding: 0px;  -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;} 
+.showcase{position: relative; height: 0px; background-color: #373740;}
+.back{background-image: url(img/banner1.jpg); background-position: center; background-size: cover; opacity: 0; height: 960px;}
+.tesoro{opacity: 0; position: relative; background-image: url(img/tesoro-corporation-showcase.jpg); background-position: center; background-size: cover; height: 960px; margin: 0px; padding: 0px;  -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;} 
 .showcase.primo{position: relative; background-image: url(img/primo-motif-showcase.jpg); background-position: center; background-size: cover; height: 100vh; margin: 0px; padding: 0px;  -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;} 
-.showcase.alpha{position: relative; background-image: url(img/alpha-showcase.jpg); background-position: center; background-size: cover; height: 100vh; margin: 0px; padding: 0px;  -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+.alpha{opacity: 0; position: relative; background-image: url(img/alpha-showcase.jpg); background-position: center; background-size: cover; height: 960px; margin: 0px; padding: 0px;  -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
 .showcase.marcal{position: relative; background-image: url(img/marcal-showcase.jpg); background-position: center; background-size: cover; height: 100vh; margin: 0px; padding: 0px;  -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;} 
 .showcase.modamia{position: relative; background-image: url(img/mm-showcase.jpg); background-position: center; background-size: cover; height: 100vh; margin: 0px; padding: 0px;  -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;} 
 .showcase h1{line-height: 58px;margin: 0px; padding: 0px; font-size: 48px; color: #fff; font-weight: 100; text-align: center; font-family: 'Lato', sans-serif;}
@@ -38,7 +39,7 @@ section{width: 100%;}
 .copyright{border-top:1px solid #d43f5b;}
 .hover{display: none; background-color:#3a3848;}
 .portfolio-context{background-image: url(img/portfolio-back.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; height: 470px; margin: 0px; padding: 80px 0px;}
-.portfolio-tesoro{ background-image: url(img/tesoro-back.png); background-position: top left; background-repeat: no-repeat; padding: 80px 0px;}
+.portfolio-tesoro{background-image: url(img/tesoro-back.png); background-position: top left; background-repeat: no-repeat; padding: 80px 0px;}
 .portfolio-context h1{color: #fff; font-size: 42px; font-weight: 100; font-family: 'Lato', sans-serif; margin-bottom: 30px; position: relative; top:200px; opacity: 0;}
 ul#project-details{position: relative; opacity: 0; display: inline; margin: 0px; padding: 0px; color: #74788b; font-weight: lighter;}
 ul#project-details li{display: inline; margin: 0px 12px; padding: 0px 10px;}
